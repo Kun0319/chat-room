@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>聊天室</title>
+    <script type="module" src="main.js" defer></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <a href="/index.html" class="go-home">
+        <img src="home.svg" alt="Home" />
+      </a>
+      <img
+        src="/invite.svg"
+        alt="Invite"
+        class="invite-button"
+        id="invite-button"
+      />
+
+      <div class="title-container">
+        <h1 class="title" id="chat-room-name">Chat room</h1>
+        <img src="/edit.svg" alt="Edit" class="edit-icon" id="edit-icon" />
+      </div>
+
+      <div class="inner-container">
+        <div class="messages" id="messages">
+          <div class="message">
+            <div class="message__user--self">user1</div>
+            <div class="message__text--self">text1</div>
+          </div>
+          <div class="message">
+            <div class="message__user">user2</div>
+            <div class="message__text">text2</div>
+          </div>
+        </div>
+      </div>
+      <div class="input-form" id="input-form">
+        <input
+          type="text"
+          class="input-form__input"
+          id="message-input"
+          placeholder="Enter a message"
+        />
+        <button class="input-form__button" id="send">Send</button>
+      </div>
+    </div>
+  </body>
+</html>
