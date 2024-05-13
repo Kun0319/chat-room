@@ -137,4 +137,5 @@ display: inline-block;
   border-radius: 20px;
   padding:10px 13px;
   font-family:'Montserrat', sans-serif;
+  cursor: pointer;
 }
